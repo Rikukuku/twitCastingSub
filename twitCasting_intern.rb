@@ -84,7 +84,7 @@ https.use_ssl = true
     req2.body = payload # リクエストボデーにJSONをセット
     res2 = https.request(req2)
 
-    # 返却の中身を見てみる
+    # 返却の中身を確認する
     puts "code -> #{res2.code}"
     puts "msg -> #{res2.message}"
     puts "body -> #{res2.body}"
