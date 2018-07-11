@@ -63,11 +63,11 @@ res = http.request(req)
 puts res.code, res.msg
 puts res.body
 
-puts nexta = res.body.slice(7..38)
+puts next_id = res.body.slice(7..38)
 
 
 answer_flag = false
-URL = "https://apiv2.twitcasting.tv/internships/2018/games/#{nexta}"
+URL = "https://apiv2.twitcasting.tv/internships/2018/games/#{next_id}"
 uri2 = URI.parse(URL)
 https = Net::HTTP.new(uri2.host, uri2.port)
 
