@@ -4,7 +4,7 @@ require 'json'
 
 DIGIT_NUMBER = 3
 
-droplet_ep = 'https://apiv2.twitcasting.tv/internships/2018/games?level=3'
+url = 'https://apiv2.twitcasting.tv/internships/2018/games?level=3'
 
 token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4MTM5ZGY4OWZkMTljNmU0M2JkNjc1ZDU4MmQxMWY5NTllMTU5ZDNlZDA2MWVjZmY4ODYwZDgxZjY1OTk1NTg3OWNjYmExOGQwYTFiOTU3In0.eyJhdWQiOiIxODIyMjQ5MzguZWVkZTdmMTk1N2FhYTA2ZDQwMzY1NjE1NjMxOTMyMzZkNDU3NWQ3YzA5MDM2NTUwOGZjZTE5NzU2YzI0ZDAzOSIsImp0aSI6IjQ4MTM5ZGY4OWZkMTljNmU0M2JkNjc1ZDU4MmQxMWY5NTllMTU5ZDNlZDA2MWVjZmY4ODYwZDgxZjY1OTk1NTg3OWNjYmExOGQwYTFiOTU3IiwiaWF0IjoxNTMwODgwNzc3LCJuYmYiOjE1MzA4ODA3NzcsImV4cCI6MTU0NjQzMjc3Nywic3ViIjoiZjoxODM2Mjc3MTIwMDIyNjg5Iiwic2NvcGVzIjpbInJlYWQiXX0.Tns-TpGGf7sSWF-prKpEnHgbJLHVFbAOBz4HwtFxr8WsZGcXdSGClVI0pTObQAHPue6GAPp3x9fWAcaoAnjvrL-m78b7LuyCgKTKiYhkAacLbn_sL0_NkpXom4tSZSyZS2qx1_RocJdgZbSAgcrWvwvYb_xzDRijrtBqKgb89dlmSnt66s8JCZV0m4VIP7VUOxLQXa7VY8PVgxXJrg5W9HPwxnAKZLWmFwdR7N7rUb773Zbep-EO453jhei5RbddglEtnmMqgWEX-FXFTSVCIJFuxiVjA2x1tUNnfoF01vAByu0e9iE8oa6fz-uW11NQqrCvecbPUwej1A4_YbMF8w'
 
@@ -50,7 +50,7 @@ end
 # =>                 ここからリクエストスタート
 #================================================================
 
-uri = URI.parse(droplet_ep)
+uri = URI.parse(url)
 http = Net::HTTP.new(uri.host, uri.port)
 
 http.use_ssl = true
